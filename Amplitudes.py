@@ -13,8 +13,7 @@ def probabilidad (v1,a):
 v2 = [[[-3,-1]],[[0,-2]],[[0,1]],[[2,0]]]
 def probabilidad_transicion(v1,v2):
     # normalizar los vectores
-
-    resultado = v1
+    resultado = vc.productoEscalar_Vector(v1,(1/vc.normaVector(v1),0))
     #vn1 = vc.productoEscalar_Vector(1/vc.normaVector(v1),v1)
      #vn2 = v2/vc.normaVector(v2)
     #resultado = vc.productoInterno_Vector(vc.adjunta_Matriz_Vector(vn1),vn2)
